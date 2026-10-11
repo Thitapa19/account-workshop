@@ -1,0 +1,9 @@
+const { MongoClient } = require('mongodb');
+const client = new MongoClient('mongodb://127.0.0.1:27017');
+
+async function main() {
+  await client.connect();
+  console.log('เชื่อมต่อ MongoDB สำเร็จ');
+  await client.close();
+}
+main().catch(console.error);

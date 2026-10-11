@@ -1,0 +1,1 @@
+console.log('User test script initialized');
